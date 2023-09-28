@@ -40,3 +40,13 @@ heap.c:42:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 32e374f
+Thu 28 Sep 2023 01:38:20 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:37:12: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘HeapArreglo’
+   37 |   nuevoHeap->HeapArreglo=(heapElem *)malloc(2 * sizeof(heapElem));
+      |            ^~
+Compilation failed
+244c24e

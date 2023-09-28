@@ -36,7 +36,7 @@ Heap* createHeap(){
   Heap *nuevoHeap=(Heap *)malloc(sizeof(Heap));
   nuevoHeap->HeapArreglo=(heapElem *)malloc(2 * sizeof(heapElem));
   nuevoHeap->size=0;
-  nuevoHeap->capac=3
+  nuevoHeap->capac=3;
 
    return NULL;
 }
