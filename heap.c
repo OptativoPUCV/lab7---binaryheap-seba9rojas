@@ -24,6 +24,13 @@ void* heap_top(Heap* pq){
 
 
 void heap_push(Heap* pq, void* data, int priority){
+  // Primero se verifica si el arreglo está lleno
+  if(pq->size == pq->capac){
+    int nuevaCapacidad= (pq->capac*2)+1;
+    pq->heapArray=(heapElem *)realloc(pq->heapArray,nuevaCapacidad* sizeof(heapElem));
+    pq->capac=nuevaCapacidad;
+    
+  }
 
 }
 
