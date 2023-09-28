@@ -183,3 +183,22 @@ heap.c:44:88: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka
       |                                                                                        ^~
 Compilation failed
 7106329
+Thu 28 Sep 2023 02:04:31 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:35:8: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   35 |   nuevo->data=data;
+      |        ^~
+heap.c:36:8: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   36 |   nuevo->priority=priority;
+      |        ^~
+heap.c:44:47: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   44 |   while(posicion>0 && (pq->heapArray[posicion]->priority > pq->heapArray[nuevaPosicion]->priority)){
+      |                                               ^~
+heap.c:44:88: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   44 |   while(posicion>0 && (pq->heapArray[posicion]->priority > pq->heapArray[nuevaPosicion]->priority)){
+      |                                                                                        ^~
+Compilation failed
+9e53266
