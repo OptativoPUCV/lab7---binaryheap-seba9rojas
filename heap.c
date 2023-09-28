@@ -31,6 +31,11 @@ void heap_push(Heap* pq, void* data, int priority){
     pq->capac=nuevaCapacidad;
     
   }
+  heapElem nuevo;
+  nuevo->data=data;
+  nuevo->priority=priority;
+
+  
 
 }
 
