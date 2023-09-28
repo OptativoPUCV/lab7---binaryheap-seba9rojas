@@ -37,6 +37,17 @@ void heap_push(Heap* pq, void* data, int priority){
 
   int posicion=pq->size;
   pq->heapArray[posicion]=nuevo;
+  pq->size++;
+
+  int nuevaPosicion=(posicion-1)/2;
+
+  while(posicion>0 || (pq->heapArray[posicion]->priority > pq->heapArray[nuevaPosicion]->priority)){
+    heapElem aux=pq->heapArray[posicion];
+    pq->heapArray[posicion]=pq->heapArray[nuevaPosicion];
+    pq->heapArray[nuevaPosicion]=aux;
+
+    posicion=nuevaPosicion;
+  }
 
 }
 
