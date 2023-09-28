@@ -66,3 +66,13 @@ heap.c:41:19: error: expected ‘;’ before ‘}’ token
       | ~                  
 Compilation failed
 4f1f7c0
+Thu 28 Sep 2023 01:39:04 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:37:12: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘HeapArreglo’
+   37 |   nuevoHeap->HeapArreglo=(heapElem *)malloc(2 * sizeof(heapElem));
+      |            ^~
+Compilation failed
+b072854
