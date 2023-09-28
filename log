@@ -86,3 +86,13 @@ heap.c:37:12: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘H
       |            ^~
 Compilation failed
 94f53f1
+Thu 28 Sep 2023 01:39:25 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:37:12: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘HeapArreglo’
+   37 |   nuevoHeap->HeapArreglo=(heapElem *)malloc(3 * (sizeof(heapElem)));
+      |            ^~
+Compilation failed
+0eae33a
