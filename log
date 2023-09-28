@@ -243,3 +243,9 @@ heap.c:39:17: error: ‘posicion’ undeclared (first use in this function)
 heap.c:39:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b8622f6
+Thu 28 Sep 2023 02:06:18 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 35/70
+733c260
