@@ -22,11 +22,7 @@ void* heap_top(Heap* pq){
     return NULL;
   }
   return pq->heapArray[0].data;
-
-
 }
-
-
 
 void heap_push(Heap* pq, void* data, int priority){
   // Primero se verifica si el arreglo está lleno
@@ -34,8 +30,8 @@ void heap_push(Heap* pq, void* data, int priority){
     int nuevaCapacidad= (pq->capac*2)+1;
     pq->heapArray=(heapElem *)realloc(pq->heapArray,nuevaCapacidad* sizeof(heapElem));
     pq->capac=nuevaCapacidad;
-    
   }
+  
   heapElem nuevo;
   nuevo.data=data;
   nuevo.priority=priority;
@@ -54,12 +50,29 @@ void heap_push(Heap* pq, void* data, int priority){
     posicion=nuevaPosicion;
     nuevaPosicion=(posicion-1)/2;
   }
-
 }
 
-
 void heap_pop(Heap* pq){
+  // Primero verificamos
+  if(pq->size==0){
+    return;
+  }
 
+  while(1){
+    int izquierda=(2*i)+1;
+    int derecha=(2*i)+2;
+    int actual=i;
+
+    heapElem aux=pq->heapArray[i];
+
+
+
+
+
+
+    
+  }
+  
 }
 
 Heap* createHeap(){
