@@ -311,3 +311,18 @@ heap.c:63:9: error: unused variable ‘derecha’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9e9a33c
+Wed 04 Oct 2023 10:17:25 PM UTC: 
+ heap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:62:22: error: ‘i’ undeclared (first use in this function)
+   62 |     int izquierda=(2*i)+1;
+      |                      ^
+heap.c:62:22: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:66:14: error: unused variable ‘aux’ [-Werror=unused-variable]
+   66 |     heapElem aux=pq->heapArray[i];
+      |              ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+4221c95

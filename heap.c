@@ -65,11 +65,19 @@ void heap_pop(Heap* pq){
 
     heapElem aux=pq->heapArray[i];
 
+    if(actual==i){
+      break;
+    }
+
+    
     if(izquierda<pq->size && pq->heapArray[izquierda].priority > pq->heapArray[actual].priority){
       actual=izquierda;
       
     }
-    
+
+    if(derecha< pq->size && pq->heapArray[derecha].priority > pq->heapArray[actual].priority){
+      actual=derecha;
+    }
 
 
 
