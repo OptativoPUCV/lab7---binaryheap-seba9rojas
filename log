@@ -249,3 +249,17 @@ Thu 28 Sep 2023 02:06:18 AM UTC:
  tests:  6|2
 total_score: 35/70
 733c260
+Wed 04 Oct 2023 10:06:51 PM UTC: 
+ heap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:24:3: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   24 |   return;
+      |   ^~~~~~
+heap.c:20:7: note: declared here
+   20 | void* heap_top(Heap* pq){
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+14e03bf
