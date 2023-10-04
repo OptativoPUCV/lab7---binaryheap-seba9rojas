@@ -376,3 +376,9 @@ heap.c:66:22: error: ‘i’ undeclared (first use in this function)
 heap.c:66:22: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 152b9ba
+Wed 04 Oct 2023 10:20:10 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 45/70
+c0cc73c
