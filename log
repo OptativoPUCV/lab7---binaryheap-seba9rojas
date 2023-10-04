@@ -344,3 +344,14 @@ heap.c:66:14: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 4ef435d
+Wed 04 Oct 2023 10:18:39 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:62:22: error: ‘i’ undeclared (first use in this function)
+   62 |     int izquierda=(2*i)+1;
+      |                      ^
+heap.c:62:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+df9ea7d
