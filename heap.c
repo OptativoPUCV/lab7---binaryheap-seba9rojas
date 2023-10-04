@@ -58,6 +58,8 @@ void heap_pop(Heap* pq){
     return;
   }
 
+  int i=0;
+
   while(1){
     int izquierda=(2*i)+1;
     int derecha=(2*i)+2;
